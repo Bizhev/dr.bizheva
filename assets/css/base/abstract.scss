@@ -1,0 +1,9 @@
+@import "variables";
+
+
+// $max-width-px рекомендовано указывать кратные 100
+@mixin respond-to($max-width-px) {
+  @media screen and (max-width: $max-width-px * 1px) {
+    @content
+  }
+}
